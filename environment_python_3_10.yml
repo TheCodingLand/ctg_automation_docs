@@ -1,0 +1,32 @@
+# This file describes a conda environment that can be to install jwql
+#
+# Run the following command to set up this environment:
+# $ conda env create -f environment_python_3_8.yml
+#
+# The environment name can be overridden with the following command:
+# $ conda env create -n <custom name> -f environment_python_3_8.yml
+#
+# Run the following command to activate the environment:
+# $ source activate jwql-3.8
+#
+# To deactivate the environment run the following command:
+# $ source deactivate
+#
+# To remove the environment entirely, run the following command:
+# $ conda env remove -n jwql-3.8
+
+name: mkdocs-3.10
+channels:
+ - conda-forge
+
+dependencies:
+  - pip
+  - python
+  - mkdocs
+  - weasyprint
+  - mkdocs
+  - mkdocs-material
+  - pymdown-extensions
+  - pip:
+    - mdx-include
+    - mkdocs-with-pdf

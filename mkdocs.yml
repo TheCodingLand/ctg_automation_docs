@@ -1,0 +1,86 @@
+site_name: Smart Automation
+site_description: CTG Smart Automation Team Framework
+site_url: https://trillian.next-in-tech.fr
+copyright: Julien Le Bourg
+theme:
+  name: material
+  palette:
+  - scheme: default
+    primary: indigo
+    accent: amber
+    toggle:
+      icon: material/lightbulb
+      name: Switch to dark mode
+  - scheme: slate
+    primary: indigo
+    accent: amber
+    toggle:
+      icon: material/lightbulb-outline
+      name: Switch to light mode
+  features:
+  - search.suggest
+  - search.highlight
+  - content.tabs.link
+  - navigation.indexes
+  icon:
+    repo: fontawesome/brands/github-alt
+  logo: images/ctg_logo_reverse.png
+  favicon: images/favicon.png
+  language: en
+  
+repo_name: TheCodingLand/ebling
+repo_url: https://github.com/thecodingland/ebling
+edit_uri: ''
+nav:
+  - Ctg Automation: index.md
+  - challenges.md
+  - Components:
+    - Components: components/index.md
+    - Ebling: components/ebling.md
+    - Trillian: components/trillian.md
+    - Arcadia: componseents/arcadia.md
+  - Tutorial - User Guide:
+    - tutorial/configuration.md
+    - tutorial/startup.md
+    - tutorial/arcadia_example.md
+  
+  
+
+markdown_extensions:
+- toc:
+    permalink: true
+- markdown.extensions.codehilite:
+    guess_lang: false
+- admonition
+- codehilite
+- extra
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format ''
+- pymdownx.tabbed:
+    alternate_style: true
+- mdx_include
+
+extra:
+  generator: false
+  social:
+  - icon: fontawesome/brands/github-alt
+    link: https://github.com/thecodingland
+  - icon: fontawesome/brands/twitter
+    link: https://twitter.com/ctgeurope
+  - icon: fontawesome/brands/linkedin
+    link: https://lu.linkedin.com/company/ctgluxembourg
+  - icon: fontawesome/solid/globe
+    link: https://trillian.next-in-tech.fr
+
+
+
+extra_css:
+  - css/termynal.css
+  - css/custom.css
+
+extra_javascript:
+  - js/termynal.js
+  - js/custom.js
