@@ -25,3 +25,102 @@ a.internal-link::after {
 .shadow {
     box-shadow: 5px 5px 10px #999;
 }
+
+.markdown-body .task-list-item {
+    list-style-type: none !important;
+  }
+  
+  .markdown-body .task-list-item input[type="checkbox"] {
+    margin: 0 4px 0.25em -20px;
+    vertical-align: middle;
+  }
+  
+  .markdown-body .task-list-control {
+    display: inline; /* Ensure label is inline incase theme sets it to block.*/
+  }
+  
+  .markdown-body .task-list-control {
+    position: relative;
+    display: inline-block;
+    color: #555;
+    cursor: pointer;
+    
+  }
+  
+  .markdown-body .task-list-control input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1; /* Put the input behind the label so it doesn't overlay text */
+    
+  }
+  
+  .markdown-body .task-list-indicator {
+    position: absolute;
+    top: -8px;
+    left: -18px;
+    display: block;
+    width:  14px;
+    height: 14px;
+    color: #eee;
+    background-color: #eee;
+    border-radius: .25rem;
+  }
+  
+  .markdown-body .task-list-control input[type="checkbox"]:checked + .task-list-indicator::before {
+    display: block;
+    margin-top: -4px;
+    margin-left: 2px;
+    font-size: 16px;
+    line-height: 1;
+    content: "✔";
+    color: #1EBB52;
+  }
+
+  
+  img[alt=uk] { width: 25px; }
+  img[alt=fr] { width: 25px; }
+  img[alt=me] { width: 150px; }
+
+  .md-typeset .tabbed-set>input:nth-child(1):checked~.tabbed-labels>:nth-child(1) {
+    background-color: #5d75ff;
+    color: white
+
+  }
+  .md-typeset .tabbed-set>input:nth-child(2):checked~.tabbed-labels>:nth-child(2) {
+    background-color: #5d75ff;
+    color: white
+
+  }
+  .md-typeset .tabbed-set>input:nth-child(3):checked~.tabbed-labels>:nth-child(3) {
+    background-color: #5d75ff;
+    color: white
+  }
+
+  .md-typeset .tabbed-set>input:nth-child(4):checked~.tabbed-labels>:nth-child(4) {
+    background-color: #5d75ff;
+    color: white
+  }
+  .tabbed-set .tabbed-content {
+    width: 100%;
+    border-style: solid;
+    border-color: rgba(23, 97, 156, 0.301);
+    padding: 10px;
+    
+  }
+
+  .admonition-title {
+      font-size: large;
+  }
+
+/*
+  .md-typeset .tabbed-set>input:first-child:checked~.tabbed-labels>:first-child{
+    background-color: #ffc105;
+
+  }
+
+
+/*  .tabbed-set input:nth-child(n+1):checked::after + label {
+    order: 99;
+    background-color: #eee;
+    display: block;
+  }*/

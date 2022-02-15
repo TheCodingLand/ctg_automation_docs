@@ -7,7 +7,7 @@ USER root
 RUN apt update 
 RUN apt install -y git build-essential
 COPY . .
-RUN mkdocs build -f ./mkdocs.insiders-pdf.yml
+RUN mkdocs build -f ./mkdocs.insiders.yml
 
 
 

@@ -22,6 +22,7 @@ theme:
   - search.highlight
   - content.tabs.link
   - navigation.indexes
+  - navigation.instant
   icon:
     repo: fontawesome/brands/github-alt
   logo: images/ctg_logo_reverse.png
@@ -38,7 +39,7 @@ nav:
     - Components: components/index.md
     - Ebling: components/ebling.md
     - Trillian: components/trillian.md
-    - Arcadia: componseents/arcadia.md
+    - Arcadia: components/arcadia.md
   - Tutorial - User Guide:
     - tutorial/configuration.md
     - tutorial/startup.md
